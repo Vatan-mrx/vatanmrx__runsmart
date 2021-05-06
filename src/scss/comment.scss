@@ -1,0 +1,42 @@
+.comment {
+    &__row {
+        display: flex;
+        margin-bottom: 50px;
+        border-bottom: 1px solid #F6F6F6;
+        padding-bottom: 50px;
+    }
+    &__row:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+    &__review {
+        padding-left: 60px;
+    }
+    &__zag {
+        @include text ($Museo700, 30px, #0D0D0D);
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    &__name {
+        @include text ($Museo500, 18px, #0D0D0D);
+        margin-bottom: 5px;
+    }
+    &__marathon{
+        @include text ($Museo300, 14px, #646464);
+        margin-bottom: 10px;
+    }
+    &__title {
+        @include text ($Museo300, 16px, #0D0D0D);
+        margin-bottom: 15px;
+        line-height: 150%;
+    }
+    &__subtitle {
+        @include text ($Museo300, 16px, #0D0D0D);
+        margin-bottom: 15px;
+        line-height: 150%;
+    }
+    &__smart {
+        @include text ($Museo300, 16px, #0D0D0D);
+    }
+    
+}

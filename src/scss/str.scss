@@ -1,0 +1,11 @@
+@mixin str-next($pa, $rg, $tp) {
+    position: $pa;;
+    right: $rg;
+    top: $tp;
+}
+
+@mixin str-prev($pa, $lf, $tp) {
+    position: $pa;;
+    left: $lf;
+    top: $tp;
+}

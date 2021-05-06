@@ -1,0 +1,145 @@
+.catalog {
+    padding-bottom: 93px;
+    .row {
+        margin-bottom: 20px;
+    }
+    &__title {
+        @include text ($Museo300, 30px,#0d0d0d );
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    &__content {
+        display: none;
+        &_active {
+            display: block;
+        }
+      }
+      &__caption {
+          display: flex;
+          justify-content: center;
+          list-style-type: none;
+          margin-bottom: 59px;
+      }
+      &__item {
+          @include text ($Museo500, 18px, #000);
+          width: 200px;
+          height: 50px;
+          line-height: 50px;
+          margin-right: 10px;
+          text-align: center;
+          transform: skew(-22deg);
+          cursor: pointer;
+          border: 2px solid #d0d0d0;
+          &_active {
+            background-color: $red;
+            border: none;
+            color: #fff;
+          }
+        &:hover {
+            transition-duration: 0.8s;
+            background-color: $red;
+            color: #fff;
+            border: none;
+        }
+      }
+      &__item:last-child {
+          margin-right: 0;
+      }
+      .skew-text {
+          transform: skew(22deg);
+      }
+      &__card {
+          padding: 20px 20px 25px;
+          border: 2px solid #E8E8E8;
+          overflow: hidden;
+      }
+      &__back {
+          width: 100%;
+          padding-left: 22px;
+          padding-right: 20px;
+          height: 328px;
+          position: relative;
+          transition-duration: 0.3s;
+          &_active {
+              transform: translateX(-100%);
+              transition-duration: 0.3s;
+          }
+      }
+      &__backOff{
+          @include text ($Museo500, 14px, #c70101);
+          position: absolute;
+          text-transform: uppercase;
+          bottom: 0;
+          left: 50%;
+          transition-duration: 0.3s;
+          transform: translateX(-50%);
+      } 
+      &__menu {
+          list-style-type: square;
+          color: $red;
+          &-item {
+              margin-bottom: 22px;
+          }
+      }
+      &__span {
+        @include text ($Museo300, 14px, #555555);
+    }
+      &__inner {
+          display: flex;
+          width: calc(200% + 42px);
+            
+      }
+      &__front {
+        width: 100%;
+          text-align: center;
+          padding-right: 20px;
+          transition-duration: 0.3s;
+          &_active {
+            transform: translateX(-100%);
+            transition-duration: 0.3s;
+        }
+      }
+      &__front-title {
+          @include text ($Museo700, 16px, #0D0D0D);
+          margin: 20px 0 16px;
+      }
+      &__front-subtitle{
+        @include text ($Museo300, 14px, #0D0D0D);
+        margin-bottom: 17px;
+      }
+      &__front-more {
+        @include text ($Museo500, 14px, #C70101);
+        text-transform: uppercase;
+      }
+      &__buy {
+          border-top: 1px solid #707070;
+          margin-top: 19px;
+          align-items: center;
+          display: flex;
+          justify-content: space-between;
+          padding-top: 16px;
+      }
+      &__old-price {
+        @include text ($Museo300, 14px, #555555);
+          text-decoration: line-through;
+      }
+      &__new-price {
+        @include text ($Museo500, 20px, #050505);
+    }
+    &__btn {
+        @include text ($Museo500, 14px, #fff);
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        background-color: #C70101;
+        cursor: pointer;
+        width: 132px;
+        height: 41px;
+        &:hover {
+            border: 1px solid #C70101;
+            background-color: #fff;
+            color: #C70101;
+            transition-duration: 0.6s;
+        }
+    }
+}

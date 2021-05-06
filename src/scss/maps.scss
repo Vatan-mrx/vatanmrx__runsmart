@@ -1,0 +1,32 @@
+.maps {
+    &__adres{
+        position: relative;
+    }
+    &__contact {
+        position: absolute;
+        z-index: 5;
+        left: 50%;
+        transform: translate(-50%);
+        background-color: $red;
+        padding: 30px;
+        text-align: center;
+    }
+    &__title {
+        @include text ($Museo500, 20px, #fff);
+        margin-bottom: 30px;
+    }
+
+    &__number {
+        @include text ($Museo700, 20px, #fff);
+        margin-bottom: 30px;
+    }
+    &__item {
+        margin-left: 20px;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    }
+    &__item:first-child {
+        margin-left: 0;
+    }
+}

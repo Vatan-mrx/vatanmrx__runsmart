@@ -1,0 +1,50 @@
+.form {
+    padding: 100px 0 100px 0;
+    background: url("../images/form/bg2.png")no-repeat;
+    background-size: cover;
+    &__form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 35.5px;
+        margin-bottom: 20px;
+    }
+    &__input {
+        margin-bottom: 15px;
+    }
+    &__input:last-child {
+        margin-bottom: 0;
+    }
+    &__type {
+        width: 275px;
+        outline: none;
+        border: none;
+        padding: 8px 13px;
+        border-radius: 5px;
+    }
+    &__type::placeholder {
+        color: #4B4B4B;
+    }
+    &__title {
+        @include text($Museo700, 36px, #fff);
+        margin-bottom: 69px;
+        text-align: start;
+    }
+    &__subtitle {
+        text-align: start;
+        @include text($Museo500, 20px, #fff);
+    }
+    &__button {
+        @include text($Museo500, 16px, #fff);
+        padding: 15px 10px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        background-color: #c70101;
+        width: 275px;
+        &:hover {
+            color: #c70101;
+            background-color: #fff;
+            transition-duration: 0.8s;
+        }
+    }
+}
